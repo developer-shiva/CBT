@@ -1,7 +1,7 @@
 <html>
 <head>
     <link rel="icon" href="icon.png" type="image/gif" sizes="16x16">
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>ECET CBT Awareness</title>
@@ -217,42 +217,7 @@ questions in a single view
 of OMR.</pre></b>
         
     </ol>
-    
-    <form id="f" action="" method="post">
-    <input  id="mail" type="email" placeholder="Your mail address" required>
-    
-    </form>
-    <textarea id="ques" rows="4" cols="30" required placeholder="Your question"></textarea><br>
-    <p id="error" style="display:none" >All fields are mandatory</p>
-    <input type="submit" onclick="post();">
-    
-    
-    <script>
-       
-       function post(){
-           var link="https://script.google.com/macros/s/AKfycbwwARBMuXcMc4PTlyF9NeOjr1z34NXoEvyeNeqynSDxBAYH6Gk/exec?action=POST&MAIL=";
-           var mail=document.getElementById("mail").value;
-           var que=document.getElementById("ques").value;
-           if(mail!=""&&que!=""){
-               
-               document.getElementById("f").action=link+mail+"&MESSAGE="+que;
-               document.getElementById("f").submit();
-               window.location.replace("https://developer-shiva.github.io/ECBT");
-               document.getElementById("ques").value="";
-               document.getElementById("mail").value="";
-               
-               alert("Your question is recorded. We will mail you once we found the answer");
-           }
-           else{
-               
-               document.getElementById("error").style.display="block";
-           }
-       } 
-        
-    
-    </script>
-    
-    
+   
     
     
     
