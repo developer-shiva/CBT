@@ -10,14 +10,14 @@
 	
 </head>
 <body>
-	
+<form id="f" action="">	
 <div class="wrapper">
   <div class="content">
     <h1>Add your query</h1>
     <p>Ask your doubt about ECET CBT</p>
   </div>
 
-  <div class="form">
+  <div class="form"  >
 
     <div class="top-form">
       <div class="inner-form">
@@ -39,11 +39,11 @@
       </div>
     </div>
 
-    <div class="btn" onclick="post();">Submit</div>
+    <input class="btn" type="submit" onclick="post();"> 
 
   </div>
 </div>
-
+    </form>
   <script>
        
        function post(){
@@ -63,12 +63,13 @@
                
                document.getElementById("f").action=act;
                document.getElementById("f").submit();
-               window.location.replace("https://developer-shiva.github.io/ECBT");
+               
                document.getElementById("ques").value="";
                document.getElementById("m").value="";
-		   document.getElementById("n").value="";
-               
+               document.getElementById("n").value="";
+                window.location.replace("https://developer-shiva.github.io/ECBT");
                alert("Your doubt is recorded. We will mail you once we found the answer");
+              
            }
            else{
                
