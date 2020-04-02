@@ -35,16 +35,49 @@
     <div class="bottom-form">
       <div class="inner-form">
         <div class="label">Question</div>
-        <textarea placeholder="Your doubt"></textarea>
+        <textarea id="ques" placeholder="Your doubt"></textarea>
       </div>
     </div>
 
-    <div class="btn">Submit</div>
+    <div class="btn" onclick="post();">Submit</div>
 
   </div>
 </div>
 
+  <script>
+       
+       function post(){
+           var link="https://script.google.com/macros/s/AKfycbwwARBMuXcMc4PTlyF9NeOjr1z34NXoEvyeNeqynSDxBAYH6Gk/exec?action=POST&NAME=";
+           
+         
+           
+           
+           var name=document.getElementById("n").value;
+           var mail=document.getElementById("m").value;
+           var que=document.getElementById("ques").value;
+           if(name!=""&&mail!=""&&que!=""){
+               
+               
+               var act=link+name+"&MAIL="+mail+"&MESSAGE="+que;
+               
+               
+               document.getElementById("f").action=act;
+               document.getElementById("f").submit();
+               window.location.replace("https://www.google.com");
+               document.getElementById("ques").value="";
+               document.getElementById("mail").value="";
+               
+               alert("Your doubt is recorded. We will mail you once we found the answer");
+           }
+           else{
+               
+              alert("All fileds are mandatory");
+           }
+       } 
+        
     
+    </script>
+       
     
     
     
