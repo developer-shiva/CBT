@@ -1,50 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
      <link rel="icon" href="icon.png" type="image/gif" sizes="16x16">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Question on ECBT</title>
 	<link rel="stylesheet" href="styles.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
 </head>
 <body>
-<form id="f" action="" method="post" >	
-<div class="wrapper">
-  <div class="content">
-    <h1>Add your query</h1>
-    <p>Ask your doubt about ECET CBT</p>
-  </div>
-
-  <div class="form">
-
-    <div class="top-form">
-      <div class="inner-form">
-        <div class="label">name</div>
-        <input id="n" type="text" placeholder="Jhon">
-      </div>
-      
-      <div class="inner-form">
-        <div class="label">Email</div>
-        <input id="m" type="email"  placeholder="Example@gmail.com">
-      </div>
-    </div>
-
-    <br>
-    <div class="bottom-form">
-      <div class="inner-form">
-        <div class="label">Question</div>
-        <textarea id="ques" placeholder="Your doubt"></textarea>
-      </div>
-    </div>
-
-    <input class="btn" type="submit" onclick="post();"> 
-
-  </div>
-</div>
-    </form>
-  <script>
+     
+	<div class="container">
+		<div class="contact-box">
+			<div class="left"></div>
+			<div class="right">
+                <form action="" method="post">
+				<h2>Ask your doubt</h2>
+                     </form>
+				<input id="n" type="text" class="field" placeholder="Your Name">
+				<input id="m" type="text" class="field" placeholder="Your Email">
+			
+				<textarea id="ques" placeholder="Your doubt" class="field"></textarea>
+				<button type="submit" class="btn" onclick="post();" >Submit</button>
+                   
+			</div>
+		</div>
+	</div>
+   
+    <script>
        
        function post(){
            var link="https://script.google.com/macros/s/AKfycbwwARBMuXcMc4PTlyF9NeOjr1z34NXoEvyeNeqynSDxBAYH6Gk/exec?action=POST&NAME=";
@@ -79,11 +63,7 @@
         
     
     </script>
-       
-    
-    <footer>
-    <h4 align="center">© 2020 by shiva sandupatla</h4>
-    </footer>
-    
+     <footer align="center">© 2020 by shiva sandupatla - All Rights Reserved</footer>
 </body>
+   
 </html>
