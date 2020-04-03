@@ -33,8 +33,7 @@ body{
 	z-index: -1;
 }
 .contact-box{
-	width:1160px;
-	/*max-width: 1150px;*/
+	width:100%;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	justify-content: center;
