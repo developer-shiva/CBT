@@ -6,7 +6,7 @@
 }
 
 body{
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 }
 
@@ -18,6 +18,8 @@ body{
 	justify-content: center;
 	align-items: center;
 	padding: 20px 30px;
+   
+    
 }
 
 .container:after{
@@ -33,7 +35,8 @@ body{
 	z-index: -1;
 }
 .contact-box{
-	width:100%;
+    
+	max-width: 1150px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	justify-content: center;
@@ -66,7 +69,7 @@ h2:after{
     bottom: 0;
     transform: translateX(-50%);
     height: 4px;
-    width: 50px;
+    width: 100px;
     border-radius: 2px;
     background-color: #2ecc71;
 }
