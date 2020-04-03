@@ -10,49 +10,42 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
 </head>
 <body>
-     
+     <form id="f" action="" method="post">
 	<div class="container">
 		<div class="contact-box">
 			<div class="left"></div>
 			<div class="right">
-                <form action="" method="post">
+                
 				<h2>Ask your doubt</h2>
-                     </form>
+                     
 				<input id="n" type="text" class="field" placeholder="Your Name">
 				<input id="m" type="text" class="field" placeholder="Your Email">
 			
 				<textarea id="ques" placeholder="Your doubt" class="field"></textarea>
-				<button type="submit" class="btn" onclick="post();" >Submit</button>
-                   
+                  
+                
+				<button class="btn" onclick="post();" >Submit</button>
+                    
 			</div>
 		</div>
 	</div>
-   
+   </form>
     <script>
        
        function post(){
            var link="https://script.google.com/macros/s/AKfycbwwARBMuXcMc4PTlyF9NeOjr1z34NXoEvyeNeqynSDxBAYH6Gk/exec?action=POST&NAME=";
            
-         
+        
            
            
            var name=document.getElementById("n").value;
            var mail=document.getElementById("m").value;
            var que=document.getElementById("ques").value;
            if(name!=""&&mail!=""&&que!=""){
-               
-               
-               var act=link+name+"&MAIL="+mail+"&MESSAGE="+que;
-               
-               
+              
+               var act = link+name+"&MAIL="+mail+"&MESSAGE="+que;
                document.getElementById("f").action=act;
                document.getElementById("f").submit();
-               
-              // document.getElementById("ques").value="";
-               //document.getElementById("m").value="";
-               //document.getElementById("n").value="";
-               
-              // alert("Your doubt is recorded. We will mail you once we found the answer");
               
            }
            else{
